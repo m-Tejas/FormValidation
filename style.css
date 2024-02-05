@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    width: 40%;
+    margin: 0 auto;
+    background: #171a1e;
+    padding: 20px;
+    border: 1px solid #2d333a;
+    border-radius: 5px;
+}
+
+input[type=email], input[type=password] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+input[type=checkbox] {
+    margin-right: 5px;
+}
+
+label[for="rememberMe"] {
+    color: rgb(235, 219, 219);
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: red;
+}
