@@ -7,7 +7,7 @@ document.getElementById("signupForm").addEventListener("submit", function(event)
     // Reset error message
     document.getElementById("errorMessage").innerText = "";
 
-    // Example of basic validation
+    // basic validation
     if (emailIsValid(email) && passwordIsValid(password)) {
         alert("Signup successful! You can now login.");
     } else {
@@ -25,12 +25,19 @@ function emailIsValid(email) {
     return /^[a-zA-Z0-9._-]+@gmail\.com$/i.test(email.trim());
 }
 
-
 function passwordIsValid(password) {
     // Password validation criteria:
     // At least 8 characters
     // Includes uppercase, lowercase, digit, and special character
-
     const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
     return regex.test(password);
 }
+
+document.getElementById("showPasswordBtn").addEventListener("click", function() {
+    var passwordField = document.getElementById("password");
+    if (passwordField.type === "password") {
+        passwordField.type = "text";
+    } else {
+        passwordField.type = "password";
+    }
+});

@@ -13,9 +13,16 @@
         <div>
             <input type="email" id="email" name="email" placeholder="Email" required>
         </div>
-        <div>
+        <div style="position: relative;">
             <input type="password" id="password" name="password" placeholder="Password" required>
+            <span id="showPasswordBtn" class="eye-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="none" d="M0 0h24v24H0z"/>
+                    <path d="M12 4.5c-5.42 0-10 4.03-10 7.5s4.58 7.5 10 7.5c1.67 0 3.23-.41 4.61-1.13l-1.43-1.43c-1.1.55-2.32.88-3.59.88-4.42 0-8-3.58-8-7.5s3.58-7.5 8-7.5c1.27 0 2.49.33 3.59.88l1.43-1.43c-1.38-.72-2.94-1.13-4.61-1.13zm0 3c-2.48 0-4.5 2.01-4.5 4.5s2.02 4.5 4.5 4.5c2.48 0 4.5-2.01 4.5-4.5s-2.02-4.5-4.5-4.5z"/>
+                </svg>
+            </span>
         </div>
+        
         <div>
             <input type="checkbox" id="rememberMe" name="rememberMe">
             <label for="rememberMe">Remember Me</label>
